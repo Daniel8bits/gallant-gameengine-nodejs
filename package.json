@@ -2,6 +2,7 @@
   "name": "gallant-engine",
   "version": "1.0.0",
   "description": "WebGL Game Engine",
+  "type": "module",
   "scripts": {
     "build": "webpack --mode=production",
     "start": "webpack serve --mode=development"
