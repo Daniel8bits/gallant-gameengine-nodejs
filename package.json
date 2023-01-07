@@ -1,0 +1,80 @@
+{
+  "name": "gallant-engine",
+  "version": "1.0.0",
+  "description": "WebGL Game Engine",
+  "scripts": {
+    "build": "webpack --mode=production",
+    "start": "webpack serve --mode=development"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 Chrome versions",
+              "last 2 Firefox versions"
+            ]
+          }
+        }
+      ],
+      "@babel/preset-react",
+      "@babel/preset-typescript"
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-proposal-decorators",
+        {
+          "legacy": true
+        }
+      ],
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-transform-react-jsx"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LonelehKitten/Razor.git"
+  },
+  "author": "Daniel Noguês de Oliveira (Github Accounts: LonelehKitten, Daniel8bits)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LonelehKitten/Razor/issues"
+  },
+  "homepage": "https://github.com/LonelehKitten/Razor#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.16.7",
+    "@babel/core": "^7.17.9",
+    "@babel/plugin-proposal-decorators": "^7.17.9",
+    "@babel/preset-env": "^7.16.7",
+    "@babel/preset-react": "^7.17.12",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/obj-file-parser": "^0.5.0",
+    "@types/react": "^18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.6.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.25.4",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "style-loader": "^3.3.1",
+    "tsconfig-paths-webpack-plugin": "^3.5.2",
+    "typescript": "^4.5.4",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.8.1",
+    "webpack-glsl-loader": "^1.0.1"
+  },
+  "dependencies": {
+    "@math.gl/core": "^3.5.7",
+    "firebase": "^9.9.0",
+    "html-webpack-plugin": "^5.5.0",
+    "math.gl": "^2.3.1",
+    "obj-file-parser": "^0.5.3"
+  }
+}
