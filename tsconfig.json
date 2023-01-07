@@ -38,5 +38,6 @@
   "exclude": [
     "node_modules",
     "tsconfig.json"
-  ]
+  ],
+  "extends": "./tsconfig.paths.json"
 }
