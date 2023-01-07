@@ -6,7 +6,7 @@ class Orientation extends Vector3 {
     super(pitch, yaw, roll)
   }
 
-  public add(orientation: Orientation): Orientation {
+  public add(orientation: Orientation): this {
     super.add(orientation)
     return this
   }

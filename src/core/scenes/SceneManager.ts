@@ -1,7 +1,6 @@
 import RenderStrategy from "../../renderer/RenderStrategy";
 import Scene from "./Scene";
 import IUpdatable from "../updater/IUpdatable";
-import Event from "src/event";
 import Updater from "../updater/Updater";
 
 class SceneManager implements IUpdatable {
@@ -36,7 +35,6 @@ class SceneManager implements IUpdatable {
         this._scenes.set(key, scene);
         if(active) {
             this._active = scene;
-            Event.trigger("loadScene",this._active);
         }
         return this
     }

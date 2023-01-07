@@ -1,4 +1,4 @@
-import RenderStrategy from "@razor/renderer/RenderStrategy";
+import RenderStrategy from "@gallant/renderer/RenderStrategy";
 import Entity from "../entities/Entity";
 import IUpdatable from "../updater/IUpdatable";
 import Updater from "../updater/Updater";

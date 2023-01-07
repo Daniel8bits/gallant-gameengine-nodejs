@@ -1,4 +1,4 @@
-import Physics from "@razor/physics/Physics";
+import Physics from "@gallant/physics/Physics";
 import DynamicEntity from "../entities/DynamicEntity";
 import Entity from "../entities/Entity";
 import SolidEntity from "../entities/SolidEntity";

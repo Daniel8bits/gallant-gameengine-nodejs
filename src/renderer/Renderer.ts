@@ -1,8 +1,8 @@
 import Entity from "../core/entities/Entity";
 import Scene from "../core/scenes/Scene";
 import Shader from "../appearance/Shader";
-import Material from "@razor/appearance/material/Material";
-import Camera from "@razor/core/Camera";
+import Material from "@gallant/appearance/material/Material";
+import Camera from "@gallant/core/Camera";
 
 abstract class Renderer {
 

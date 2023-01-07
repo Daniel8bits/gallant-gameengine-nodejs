@@ -6,7 +6,7 @@ module.exports = function build(env, arg) {
   const config = {
     entry: {
       index: {
-        import: './src/index.tsx'
+        import: './src/index.ts'
       }
     },
     output: {

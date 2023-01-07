@@ -1,5 +1,5 @@
 import { Vector3 } from "@math.gl/core"
-import Transform from "@razor/math/Transform"
+import Transform from "@gallant/math/Transform"
 
 interface SoundOptions {
     loop?: boolean

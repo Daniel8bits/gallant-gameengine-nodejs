@@ -5,7 +5,7 @@ import OBJLoader from '../loader/OBJLoader'
 import Texture, { TextureType } from '../appearance/Texture'
 import Material from '../appearance/material/Material'
 import TextureLoader from '../loader/TextureLoader'
-import Sound, { SoundType } from '@razor/sound/Sound'
+import Sound, { SoundType } from '@gallant/sound/Sound'
 
 class ResourceManager {
 

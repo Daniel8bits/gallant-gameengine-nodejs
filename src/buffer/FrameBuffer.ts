@@ -1,6 +1,6 @@
-import Shader from "@razor/appearance/Shader";
-import Texture from "@razor/appearance/Texture";
-import { gl } from "@razor/gl/GLUtils";
+import Shader from "@gallant/appearance/Shader";
+import Texture from "@gallant/appearance/Texture";
+import { gl } from "@gallant/gl/GLUtils";
 import Razor from "../core/Razor";
 
 class Framebuffer {

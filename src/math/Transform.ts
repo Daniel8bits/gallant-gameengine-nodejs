@@ -1,8 +1,8 @@
 import Orientation from "./Orientation"
 import {Vector3, Pose, Euler, Matrix4} from "@math.gl/core"
 import { toRadians } from "./math";
-import Scene from "@razor/core/scenes/Scene";
-import Entity from "@razor/core/entities/Entity";
+import Scene from "@gallant/core/scenes/Scene";
+import Entity from "@gallant/core/entities/Entity";
 import TransformStruct from "./TransformStruct";
 
 class Transform {

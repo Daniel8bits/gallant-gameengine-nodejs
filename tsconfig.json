@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "target": "ES2021",
+    "target": "ES2022",
     "lib": [
       "es6",
+      "es2020",
       "dom"
     ],
     "allowJs": true,
@@ -28,7 +29,7 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@razor/*": ["./src/engine/*"]
+      "@gallant/*": ["./src/*"]
     },
   },
   "include": [
