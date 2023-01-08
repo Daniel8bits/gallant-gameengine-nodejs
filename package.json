@@ -2,7 +2,6 @@
   "name": "gallant-engine",
   "version": "1.0.0",
   "description": "WebGL Game Engine",
-  "type": "module",
   "scripts": {
     "build": "tsc && npx tsc-alias"
   },
