@@ -52,47 +52,5 @@
     "html-webpack-plugin": "^5.5.0",
     "math.gl": "^2.3.1",
     "obj-file-parser": "^0.5.3"
-  },
-  "exports": {
-    "./appearance/**/*.js": {
-      "default": "./dist/src/appearance/**/*.js",
-      "types": "./@types/src/appearance/**/*.d.ts"
-    },
-    "./buffer/**/*.js": {
-      "default": "./dist/src/buffer/**/*.js",
-      "types": "./@types/src/buffer/**/*.d.ts"
-    },
-    "./core/**/*.js": {
-      "default": "./dist/src/core/**/*.js",
-      "types": "./@types/src/cor/**/*.d.ts"
-    },
-    "./gl/**/*.js": {
-      "default": "./dist/src/gl/**/*.js",
-      "types": "./@types/src/gl/**/*.d.ts"
-    },
-    "./loader/**/*.js": {
-      "default": "./dist/src/loader/**/*.js",
-      "types": "./@types/src/loader/**/*.d.ts"
-    },
-    "./math/**/*.js": {
-      "default": "./dist/src/math/**/*.js",
-      "types": "./@types/src/math/**/*.d.ts"
-    },
-    "./physics/**/*.js": {
-      "default": "./dist/src/physics/**/*.js",
-      "types": "./@types/src/physics/**/*.d.ts"
-    },
-    "./renderer/**/*.js": {
-      "default": "./dist/src/renderer/**/*.js",
-      "types": "./@types/src/renderer/**/*.d.ts"
-    },
-    "./sound/**/*.js": {
-      "default": "./dist/src/sound/**/*.js",
-      "types": "./@types/src/sound/**/*.d.ts"
-    },
-    "./utils/**/*.js": {
-      "default": "./dist/src/utils/**/*.js",
-      "types": "./@types/src/utils/**/*.d.ts"
-    }
   }
 }
