@@ -1,5 +1,5 @@
 import Texture from "@appearance/Texture";
-import Razor from "@core/Razor";
+import Gallant from "@gallant/src/core/Gallant";
 import { gl } from "@gl/GLUtils";
 
 class Buffer{
@@ -7,7 +7,7 @@ class Buffer{
     private _buffer : WebGLFramebuffer;
     private _texture : Texture;
 
-    constructor(width: number = Razor.CANVAS.width, height: number = Razor.CANVAS.height){
+    constructor(width: number = Gallant.CANVAS.width, height: number = Gallant.CANVAS.height){
         this._buffer = gl.createFramebuffer();
         this._texture = new Texture(width, height)
     }

@@ -1,6 +1,6 @@
 import Texture from "@appearance/Texture";
 import { gl } from "@gl/GLUtils";
-import Razor from "@core/Razor";
+import Gallant from "@core/Gallant";
 
 class Framebuffer {
 
@@ -9,7 +9,7 @@ class Framebuffer {
     private _attachment: number;
     private _texture: Texture
 
-    constructor(attachemnt: number, width: number = Razor.CANVAS.width, height: number = Razor.CANVAS.height) {
+    constructor(attachemnt: number, width: number = Gallant.CANVAS.width, height: number = Gallant.CANVAS.height) {
         this._attachment = attachemnt;
         this._texture = new Texture(width, height)
     }
@@ -70,7 +70,7 @@ class Framebuffer {
             console.log("Error at Framebuffer setting.");
         }
         gl.bindFramebuffer(gl.FRAMEBUFFER, null);
-        gl.viewport(0, 0, Razor.CANVAS.width, Razor.CANVAS.height);
+        gl.viewport(0, 0, Gallant.CANVAS.width, Gallant.CANVAS.height);
     }
 
     public bind() {
@@ -84,7 +84,7 @@ class Framebuffer {
         //this.storeBuffer();
         this._texture.unbind()
         gl.bindFramebuffer(gl.FRAMEBUFFER, null);
-        gl.viewport(0, 0, Razor.CANVAS.width, Razor.CANVAS.height);
+        gl.viewport(0, 0, Gallant.CANVAS.width, Gallant.CANVAS.height);
         gl.clearColor(0, 0, 0, 0);
         gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
         // debugger;

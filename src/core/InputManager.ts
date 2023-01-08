@@ -1,4 +1,4 @@
-import Razor from "./Razor"
+import Gallant from "./Gallant"
 
 export const Keys = {
     KEY_0: 'Digit0',
@@ -102,9 +102,9 @@ class InputManager {
         InputManager._currentMousePosition = [0, 0]
         InputManager._previousMousePosition = [0, 0]
         InputManager._mouseMovement = [0, 0]
-        Razor.CANVAS.addEventListener('mousedown', InputManager.onMouseDown)
-        Razor.CANVAS.addEventListener('mouseup', InputManager.onMouseUp)
-        Razor.CANVAS.addEventListener('mousemove', InputManager.onMouseMove)
+        Gallant.CANVAS.addEventListener('mousedown', InputManager.onMouseDown)
+        Gallant.CANVAS.addEventListener('mouseup', InputManager.onMouseUp)
+        Gallant.CANVAS.addEventListener('mousemove', InputManager.onMouseMove)
 
         this._shouldDebug = false
     }
@@ -125,7 +125,7 @@ class InputManager {
     }
 
     private static onKeyDown(event: KeyboardEvent): void {
-        if (Razor.IS_MOUSE_INSIDE) {
+        if (Gallant.IS_MOUSE_INSIDE) {
             event.stopPropagation()
             event.preventDefault()
             InputManager._keys.set(event.code, true)
@@ -133,7 +133,7 @@ class InputManager {
     }
 
     private static onKeyUp(event: KeyboardEvent): void {
-        if (Razor.IS_MOUSE_INSIDE) {
+        if (Gallant.IS_MOUSE_INSIDE) {
             event.stopPropagation()
             event.preventDefault()
             InputManager._keys.set(event.code, false)
@@ -183,11 +183,11 @@ class InputManager {
     private static onMouseDown(event: MouseEvent): void {
         event.stopPropagation()
         event.preventDefault()
-        InputManager._mouseButtons[event.button] = Razor.IS_MOUSE_INSIDE
+        InputManager._mouseButtons[event.button] = Gallant.IS_MOUSE_INSIDE
     }
 
     private static onMouseUp(event: MouseEvent): void {
-        if (Razor.IS_MOUSE_INSIDE) {
+        if (Gallant.IS_MOUSE_INSIDE) {
             event.stopPropagation()
             event.preventDefault()
             InputManager._mouseButtons[event.button] = false
@@ -195,7 +195,7 @@ class InputManager {
     }
 
     private static onMouseMove(event: MouseEvent): void {
-        if (Razor.IS_MOUSE_INSIDE) {
+        if (Gallant.IS_MOUSE_INSIDE) {
             event.stopPropagation()
             event.preventDefault()
 

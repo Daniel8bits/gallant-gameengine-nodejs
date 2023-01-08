@@ -6,7 +6,7 @@ import InputManager from './InputManager';
 /**
  * Canvas management class
  */
-class Razor {
+class Gallant {
 
     public static CANVAS: HTMLCanvasElement;
     public static FOCUSED: boolean
@@ -17,7 +17,7 @@ class Razor {
     private _started: boolean
 
     public constructor(gameCore: GameCore, canvas?: HTMLCanvasElement) {
-        Razor.CANVAS = GLUtils.init(canvas);
+        Gallant.CANVAS = GLUtils.init(canvas);
         Object.defineProperty(this, "CANVAS", {
             writable: false
         })
@@ -25,12 +25,12 @@ class Razor {
         this._gameLoop = new GameLoop(gameCore);  
         this._started = false
         this._gameCore = gameCore;
-        Razor.FOCUSED = Boolean(!!canvas)
-        Razor.IS_MOUSE_INSIDE = Boolean(!!canvas)
+        Gallant.FOCUSED = Boolean(!!canvas)
+        Gallant.IS_MOUSE_INSIDE = Boolean(!!canvas)
     }
 
     public start() : void {
-        if(!Razor.IS_MOUSE_INSIDE) {
+        if(!Gallant.IS_MOUSE_INSIDE) {
             this.configs()
         }
         this.resize();
@@ -40,43 +40,43 @@ class Razor {
     }
 
     public resize() : void {
-        if(Razor.CANVAS === undefined) {
+        if(Gallant.CANVAS === undefined) {
             throw new Error('Canvas was not initialized!');
         }
 
-        Razor.CANVAS.width = Razor.CANVAS.offsetWidth
-        Razor.CANVAS.height = Razor.CANVAS.offsetHeight
-        gl.viewport(0, 0,Razor.CANVAS.width, Razor.CANVAS.height);
+        Gallant.CANVAS.width = Gallant.CANVAS.offsetWidth
+        Gallant.CANVAS.height = Gallant.CANVAS.offsetHeight
+        gl.viewport(0, 0, Gallant.CANVAS.width, Gallant.CANVAS.height);
         
     }
 
     private configs() {
-        Razor.CANVAS.addEventListener('click', (e) => {
-            if(!Razor.IS_MOUSE_INSIDE){
+        Gallant.CANVAS.addEventListener('click', (e) => {
+            if(!Gallant.IS_MOUSE_INSIDE){
 
-                Razor.FOCUSED = Razor.isInsideCanvas(e.clientX, e.clientY)
-                Razor.CANVAS.requestPointerLock();// (Responsável por remover o mouse)
+                Gallant.FOCUSED = Gallant.isInsideCanvas(e.clientX, e.clientY)
+                Gallant.CANVAS.requestPointerLock();// (Responsável por remover o mouse)
             }
             //Razor.IS_MOUSE_INSIDE = true;
         })
         document.addEventListener('pointerlockchange', event => { 
-            Razor.IS_MOUSE_INSIDE = !Razor.IS_MOUSE_INSIDE;
+            Gallant.IS_MOUSE_INSIDE = !Gallant.IS_MOUSE_INSIDE;
         });
 
-        Razor.CANVAS.addEventListener('mousemove', (e) => {
+        Gallant.CANVAS.addEventListener('mousemove', (e) => {
          //   Razor.IS_MOUSE_INSIDE = Razor.isInsideCanvas(e.clientX, e.clientY)
         })
-        Razor.CANVAS.addEventListener('mouseleave', (e) => {
-            Razor.IS_MOUSE_INSIDE = false;
+        Gallant.CANVAS.addEventListener('mouseleave', (e) => {
+            Gallant.IS_MOUSE_INSIDE = false;
         })
     }
 
     public static isInsideCanvas(x: number, y: number) {
         return (
-            x > Razor.CANVAS.offsetLeft &&
-            x < Razor.CANVAS.offsetLeft+Razor.CANVAS.offsetWidth &&
-            y > Razor.CANVAS.offsetTop &&
-            y < Razor.CANVAS.offsetTop+Razor.CANVAS.offsetHeight
+            x > Gallant.CANVAS.offsetLeft &&
+            x < Gallant.CANVAS.offsetLeft+Gallant.CANVAS.offsetWidth &&
+            y > Gallant.CANVAS.offsetTop &&
+            y < Gallant.CANVAS.offsetTop+Gallant.CANVAS.offsetHeight
         )
     }
 
@@ -89,4 +89,4 @@ class Razor {
     }
 }
 
-export default Razor;
+export default Gallant;
