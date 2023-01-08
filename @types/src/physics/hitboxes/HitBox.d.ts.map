@@ -1,0 +1,1 @@
+{"version":3,"file":"HitBox.d.ts","sourceRoot":"","sources":["../../../../src/physics/hitboxes/HitBox.ts"],"names":[],"mappings":"AACA,uBAAe,MAAM;IAEnB,OAAO,CAAC,kBAAkB,CAAS;;IAM5B,mBAAmB,IAAI,OAAO;IAI9B,gBAAgB,CAAC,iBAAiB,EAAE,OAAO,GAAG,IAAI;CAI1D;AAED,eAAe,MAAM,CAAC"}

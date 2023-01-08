@@ -3,17 +3,17 @@
     "baseUrl": ".",
     "paths": {
         "@gallant/*": ["./*"],
-        "@appearance/*": ["./appearance/*"],
-        "@buffer/*": ["./buffer/*"],
-        "@core/*": ["./core/*"],
-        "@gl/*": ["./gl/*"],
-        "@loader/*": ["./loader/*"],
-        "@math/*": ["./math/*"],
-        "@physics/*": ["./physics/*"],
-        "@renderer/*": ["./renderer/*"],
-        "@sound/*": ["./sound/*"],
-        "@utils/*": ["./utils/*"],
-        "@custom-types/*": ["./custom-types/*"]
+        "@appearance/*": ["./src/appearance/*"],
+        "@buffer/*": ["./src/buffer/*"],
+        "@core/*": ["./src/core/*"],
+        "@gl/*": ["./src/gl/*"],
+        "@loader/*": ["./src/loader/*"],
+        "@math/*": ["./src/math/*"],
+        "@physics/*": ["./src/physics/*"],
+        "@renderer/*": ["./src/renderer/*"],
+        "@sound/*": ["./src/sound/*"],
+        "@utils/*": ["./src/utils/*"],
+        "@custom-types/*": ["./src/custom-types/*"]
     }
   }
 }

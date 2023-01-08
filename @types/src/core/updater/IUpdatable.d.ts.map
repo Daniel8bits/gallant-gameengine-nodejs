@@ -1,0 +1,1 @@
+{"version":3,"file":"IUpdatable.d.ts","sourceRoot":"","sources":["../../../../src/core/updater/IUpdatable.ts"],"names":[],"mappings":"AAAA,OAAO,OAAO,MAAM,WAAW,CAAC;AAEhC,MAAM,CAAC,OAAO,WAAW,UAAU;IACjC,MAAM,EAAE,CAAC,IAAI,EAAE,MAAM,EAAE,KAAK,EAAE,MAAM,EAAE,OAAO,EAAE,OAAO,KAAK,IAAI,CAAC;IAChE,OAAO,EAAE,MAAM,MAAM,CAAC;CACvB"}

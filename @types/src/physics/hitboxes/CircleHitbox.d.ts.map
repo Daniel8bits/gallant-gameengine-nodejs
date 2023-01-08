@@ -1,0 +1,1 @@
+{"version":3,"file":"CircleHitbox.d.ts","sourceRoot":"","sources":["../../../../src/physics/hitboxes/CircleHitbox.ts"],"names":[],"mappings":"AAAA,OAAO,MAAM,MAAM,UAAU,CAAA;AAG7B,cAAM,YAAa,SAAQ,MAAM;IAE/B,OAAO,CAAC,OAAO,CAAQ;gBAEJ,MAAM,EAAE,MAAM;IAK1B,SAAS,IAAI,MAAM;CAI3B;AAED,eAAe,YAAY,CAAA"}

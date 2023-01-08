@@ -1,0 +1,46 @@
+import Orientation from "./Orientation";
+import { Vector3, Matrix4 } from "@math.gl/core";
+import Scene from "../core/scenes/Scene";
+import Entity from "../core/entities/Entity";
+import TransformStruct from "./TransformStruct";
+declare class Transform {
+    private _entity;
+    private _globalTransform;
+    private _localTransform;
+    private _children;
+    private _parent;
+    constructor(translation?: Vector3, rotation?: Orientation, scale?: Vector3);
+    setEntity(entity: Entity): void;
+    get children(): Scene;
+    set parent(parent: Transform);
+    get parent(): Transform;
+    getTranslation(): Vector3;
+    setTranslation(translation: Vector3): void;
+    setX(x: number): void;
+    setY(y: number): void;
+    setZ(z: number): void;
+    getX(): number;
+    getY(): number;
+    getZ(): number;
+    getRotation(): Orientation;
+    setRotation(rotation: Orientation): void;
+    setPitch(pitch: number): void;
+    setYaw(yaw: number): void;
+    setRoll(roll: number): void;
+    getPitch(): number;
+    getYaw(): number;
+    getRoll(): number;
+    private _fixRotation;
+    getScale(): Vector3;
+    setScale(scale: Vector3): void;
+    toMatrix(): Matrix4;
+    toMatrixIgnoringZ(): Matrix4;
+    toInversePositionMatrix(): Matrix4;
+    worldMatrix(): Matrix4;
+    worldMatrixIgnoringZ(): Matrix4;
+    worldMatrixFrom(transform: Transform): Matrix4;
+    worldTranslation(): Vector3;
+    getLocalTransform(): TransformStruct;
+}
+export default Transform;
+//# sourceMappingURL=Transform.d.ts.map

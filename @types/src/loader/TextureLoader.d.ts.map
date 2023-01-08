@@ -1,0 +1,1 @@
+{"version":3,"file":"TextureLoader.d.ts","sourceRoot":"","sources":["../../../src/loader/TextureLoader.ts"],"names":[],"mappings":"AAAA,OAAO,OAAO,MAAM,qBAAqB,CAAC;AAE1C,cAAM,aAAa;IAGV,IAAI,CAAC,QAAQ,EAAE,MAAM,EAAC,QAAQ,CAAC,EAAE,CAAC,OAAO,EAAG,OAAO,KAAK,IAAI,GAAG,OAAO;CA8B9E;AAED,eAAe,aAAa,CAAA"}

@@ -6,21 +6,22 @@
       "es2020",
       "dom"
     ],
+    "module": "es6",
     "allowJs": true,
     "removeComments": true,
     "skipLibCheck": true,
     "strict": false,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
     "incremental": true,
-    "jsx": "react",
     "esModuleInterop": true,
-    "module": "commonjs",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "isolatedModules": true,
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "./@types",
     "outDir": "./dist",
     "rootDir": ".",
     "typeRoots": [
@@ -28,18 +29,7 @@
     ],
     "baseUrl": "."
   },
-  "include": [
-    "appearance/",
-    "buffer/",
-    "core/",
-    "gl/",
-    "loader/",
-    "math/",
-    "physics/",
-    "renderer/",
-    "sound/",
-    "utils/"
-  ],
+  "include": ["src/**/*"],
   "exclude": [
     "node_modules",
     "tsconfig.json"

@@ -1,0 +1,41 @@
+import RenderStrategy from "../../renderer/RenderStrategy";
+import Entity from "../entities/Entity";
+import IUpdatable from "../updater/IUpdatable";
+import Updater from "../updater/Updater";
+declare class Scene implements IUpdatable {
+    private _name;
+    private _entities;
+    private _visible;
+    private _hidden;
+    private _renderStrategy;
+    private _onChangeEvent;
+    constructor(name: string);
+    update(time: number, delta: number, updater: Updater): void;
+    render(delta: number): void;
+    add(entity: Entity, visible?: boolean): Scene;
+    remove(entity: Entity | string): Scene;
+    setVisibility(entity: Entity | string, visible: boolean): Scene | never;
+    get(name: string): Entity;
+    getKeys(): string[];
+    getKeysFromVisible(): string[];
+    getKeysFromHidden(): string[];
+    private _keys;
+    forEach(fn: (entity: Entity, key?: string) => void): Scene;
+    forEachVisible(fn: (entity: Entity, key?: string) => void): Scene;
+    forEachHidden(fn: (entity: Entity, key?: string) => void): Scene;
+    private _forEach;
+    has(entity: Entity | string): boolean;
+    hasInVisible(entity: Entity | string): boolean;
+    hasInHidden(entity: Entity | string): boolean;
+    private _has;
+    filterVisible(predicate: (entity: Entity) => boolean): Entity[];
+    private _validate;
+    private _getName;
+    getName(): string;
+    get entities(): Map<string, Entity>;
+    getRenderStrategy(): RenderStrategy;
+    onChange(onChangeEvent: () => void): void;
+    getOnChangeEvent(): () => void;
+}
+export default Scene;
+//# sourceMappingURL=Scene.d.ts.map
