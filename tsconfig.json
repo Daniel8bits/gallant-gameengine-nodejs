@@ -21,7 +21,7 @@
     "isolatedModules": true,
     "declaration": true,
     "declarationMap": true,
-    "declarationDir": "./@types",
+    
     "outDir": "./dist",
     "rootDir": ".",
     "typeRoots": [
