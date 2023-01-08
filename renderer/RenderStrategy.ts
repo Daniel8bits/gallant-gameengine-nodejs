@@ -1,4 +1,4 @@
-import Scene from "../core/scenes/Scene";
+import Scene from "@core/scenes/Scene";
 import Renderer from "./Renderer"
 
 class RenderStrategy {

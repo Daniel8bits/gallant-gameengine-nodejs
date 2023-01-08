@@ -1,15 +1,14 @@
 import { Vector2, Vector3 } from "@math.gl/core";
-import SolidEntity from "../../core/entities/SolidEntity";
+import SolidEntity from "@core/entities/SolidEntity";
 import { 
   circunferenceEquationOf,
   distanceBetweenPointAndLine, 
   intersectionPointsBetweenLineAndCircunference, 
-  LineEquation, 
   lineEquationOf, 
   PairPoints
-} from "../../math/math";
-import CircleHitbox from "../hitboxes/CircleHitbox";
-import EdgeHitbox, {Line} from "../hitboxes/EdgeHitbox";
+} from "@math/math";
+import CircleHitbox from "@physics/hitboxes/CircleHitbox";
+import EdgeHitbox from "@physics/hitboxes/EdgeHitbox";
 import Intersection from "./Intersection";
 
 interface CircleLineIntersection {

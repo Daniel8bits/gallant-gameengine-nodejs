@@ -1,8 +1,8 @@
-import Entity from "../core/entities/Entity";
-import Scene from "../core/scenes/Scene";
-import Shader from "../appearance/Shader";
-import Material from "@gallant/appearance/material/Material";
-import Camera from "@gallant/core/Camera";
+import Entity from "@core/entities/Entity";
+import Scene from "@core/scenes/Scene";
+import Shader from "@appearance/Shader";
+import Material from "@appearance/material/Material";
+import Camera from "@core/Camera";
 
 abstract class Renderer {
 

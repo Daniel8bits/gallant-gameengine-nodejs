@@ -1,6 +1,4 @@
-import { gl } from "../gl/GLUtils";
-//import Float32Buffer from "../utils/Float32Buffer";
-//import Int32Buffer from "../utils/Int32Buffer";
+import { gl } from "@gl/GLUtils";
 
 type IntTypedArray = BigInt64Array | Int32Array | Int16Array | Int8Array ;
 type UintTypedArray = BigUint64Array | Uint32Array | Uint16Array | Uint8Array ;

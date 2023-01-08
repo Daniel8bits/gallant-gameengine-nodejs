@@ -22,18 +22,23 @@
     "emitDecoratorMetadata": true,
     "isolatedModules": true,
     "outDir": "./dist",
-    "rootDir": "./src",
+    "rootDir": ".",
     "typeRoots": [
-        "./node_modules/@types",
-        "./src/@types"
+      "./node_modules/@types",
     ],
-    "baseUrl": ".",
-    "paths": {
-      "@gallant/*": ["./src/*"]
-    },
+    "baseUrl": "."
   },
   "include": [
-    "src/"
+    "appearance/",
+    "buffer/",
+    "core/",
+    "gl/",
+    "loader/",
+    "math/",
+    "physics/",
+    "renderer/",
+    "sound/",
+    "utils/"
   ],
   "exclude": [
     "node_modules",

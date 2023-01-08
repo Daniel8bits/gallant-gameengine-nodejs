@@ -1,8 +1,8 @@
 import {Matrix4, Vector3, Vector4} from "@math.gl/core"
 
 import IResource from './IResource';
-import { gl } from "../gl/GLUtils";
-import FileUtils from '../utils/FileUtils';
+import { gl } from "@gl/GLUtils";
+import FileUtils from '@utils/FileUtils';
 
 export interface ShaderType {
     name: string

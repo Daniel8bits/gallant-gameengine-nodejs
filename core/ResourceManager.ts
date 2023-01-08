@@ -1,5 +1,5 @@
-import Shader, { ShaderType } from '../appearance/Shader'
-import VAO, { VAOType } from '../buffer/VAO'
+import Shader, { ShaderType } from '@appearance/Shader'
+import VAO, { VAOType } from '@buffer/VAO'
 import VBO from '../buffer/VBO'
 import OBJLoader from '../loader/OBJLoader'
 import Texture, { TextureType } from '../appearance/Texture'

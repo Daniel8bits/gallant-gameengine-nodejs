@@ -1,5 +1,4 @@
-import { Vector3 } from "@math.gl/core";
-import SolidEntity from "../../core/entities/SolidEntity";
+import SolidEntity from "@core/entities/SolidEntity";
 
 abstract class Intersection {
 

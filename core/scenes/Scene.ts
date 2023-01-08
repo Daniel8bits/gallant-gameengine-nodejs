@@ -1,7 +1,7 @@
-import RenderStrategy from "@gallant/renderer/RenderStrategy";
-import Entity from "../entities/Entity";
-import IUpdatable from "../updater/IUpdatable";
-import Updater from "../updater/Updater";
+import RenderStrategy from "@renderer/RenderStrategy";
+import Entity from "@core/entities/Entity";
+import IUpdatable from "@core/updater/IUpdatable";
+import Updater from "@core/updater/Updater";
 
 class Scene implements IUpdatable {
 

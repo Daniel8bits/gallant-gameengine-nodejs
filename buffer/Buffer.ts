@@ -1,6 +1,6 @@
-import Texture from "@gallant/appearance/Texture";
-import Razor from "@gallant/core/Razor";
-import { gl } from "@gallant/gl/GLUtils";
+import Texture from "@appearance/Texture";
+import Razor from "@core/Razor";
+import { gl } from "@gl/GLUtils";
 
 class Buffer{
 

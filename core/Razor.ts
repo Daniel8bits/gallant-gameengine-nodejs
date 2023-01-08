@@ -1,4 +1,4 @@
-import GLUtils, { gl } from '../gl/GLUtils';
+import GLUtils, { gl } from '@gl/GLUtils';
 import GameCore from './GameCore';
 import GameLoop from './GameLoop';
 import InputManager from './InputManager';

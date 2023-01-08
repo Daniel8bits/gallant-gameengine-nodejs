@@ -1,7 +1,6 @@
 import { Matrix4, toRadians, Vector3 } from "@math.gl/core";
 import Orientation from "./Orientation";
 
-
 class TransformStruct {
 
   public translation: Vector3;

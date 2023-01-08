@@ -1,10 +1,9 @@
 import { Vector3 } from "@math.gl/core";
-import Material from "../../appearance/material/Material";
-import VAO from "../../buffer/VAO";
-import Hitbox from "../../physics/hitboxes/HitBox";
-import Renderer from "../../renderer/Renderer";
+import Material from "@appearance/material/Material";
+import VAO from "@buffer/VAO";
+import Hitbox from "@physics/hitboxes/HitBox";
+import Renderer from "@renderer/Renderer";
 import SolidEntity from "./SolidEntity";
-
 
 abstract class DynamicEntity extends SolidEntity {
 

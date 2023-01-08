@@ -1,4 +1,4 @@
-import { gl } from "../gl/GLUtils"
+import { gl } from "@gl/GLUtils"
 import IResource from "./IResource"
 
 export interface TextureType {

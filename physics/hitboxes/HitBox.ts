@@ -1,5 +1,4 @@
 
-
 abstract class Hitbox {
 
   private _collisionDisabled: boolean

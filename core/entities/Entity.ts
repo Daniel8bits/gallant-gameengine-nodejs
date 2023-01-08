@@ -1,11 +1,9 @@
-import VAO from "../../buffer/VAO";
-import Renderer from "../../renderer/Renderer";
-import Transform from "../../math/Transform"
-import Material from "../../appearance/material/Material";
-import Scene from "../scenes/Scene";
-import Updater from "../updater/Updater";
-
-type Constructor<T> = { new (...args: any[]): T };
+import VAO from "@buffer/VAO";
+import Renderer from "@renderer/Renderer";
+import Transform from "@math/Transform"
+import Material from "@appearance/material/Material";
+import Scene from "@core/scenes/Scene";
+import Updater from "@core/updater/Updater";
 
 type NonConstructorKeys<T> = ({[P in keyof T]: T[P] extends new () => any ? never : P })[keyof T];
 type NonConstructor<T> = Pick<T, NonConstructorKeys<T>>;

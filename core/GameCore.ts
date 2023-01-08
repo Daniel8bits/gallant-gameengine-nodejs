@@ -1,5 +1,4 @@
-import SceneManager from './scenes/SceneManager'
-import RenderStrategy from '../renderer/RenderStrategy'
+import SceneManager from '@core/scenes/SceneManager'
 import Scene from './scenes/Scene';
 import Updater from './updater/Updater';
 

@@ -1,7 +1,7 @@
-import Material from "../../appearance/material/Material";
-import VAO from "../../buffer/VAO";
-import Hitbox from "../../physics/hitboxes/HitBox";
-import Renderer from "../../renderer/Renderer";
+import Material from "@appearance/material/Material";
+import VAO from "@buffer/VAO";
+import Hitbox from "@physics/hitboxes/HitBox";
+import Renderer from "@renderer/Renderer";
 import Entity from "./Entity";
 
 abstract class SolidEntity extends Entity {

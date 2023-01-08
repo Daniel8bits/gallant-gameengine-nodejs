@@ -1,6 +1,6 @@
 import { Vector2, Vector3 } from "@math.gl/core";
-import SolidEntity from "../../core/entities/SolidEntity";
-import CircleHitbox from "../hitboxes/CircleHitbox";
+import SolidEntity from "@core/entities/SolidEntity";
+import CircleHitbox from "@physics/hitboxes/CircleHitbox";
 import Intersection from "./Intersection";
 
 class CircleCircleIntersection extends Intersection {

@@ -1,7 +1,8 @@
-import { gl } from "../gl/GLUtils";
+import { gl } from "@gl/GLUtils";
 import GameCore from "./GameCore";
 import InputManager from "./InputManager";
-import Framebuffer from "../buffer/FrameBuffer";
+import Framebuffer from "@buffer/FrameBuffer";
+
 class GameLoop {
 
     private _gameCore: GameCore;

@@ -1,7 +1,7 @@
 import {Vector3, Matrix4} from "@math.gl/core"
-import Orientation from "@gallant/math/Orientation"
-import { toRadians } from "@gallant/math/math"
-import Transform from "../math/Transform"
+import Orientation from "@math/Orientation"
+import { toRadians } from "@math/math"
+import Transform from "@math/Transform"
 
 class Camera {
 

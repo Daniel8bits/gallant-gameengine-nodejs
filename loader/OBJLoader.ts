@@ -1,7 +1,7 @@
 import OBJFile from 'obj-file-parser'
-import VAO from '../buffer/VAO'
-import VBO from '../buffer/VBO';
-import FileUtils from '../utils/FileUtils';
+import VAO from '@buffer/VAO'
+import VBO from '@buffer/VBO';
+import FileUtils from '@utils/FileUtils';
 
 
 export interface HitboxesJSON {

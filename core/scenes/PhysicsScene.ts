@@ -1,8 +1,8 @@
-import Physics from "@gallant/physics/Physics";
-import DynamicEntity from "../entities/DynamicEntity";
-import Entity from "../entities/Entity";
-import SolidEntity from "../entities/SolidEntity";
-import Updater from "../updater/Updater";
+import Physics from "@physics/Physics";
+import DynamicEntity from "@core/entities/DynamicEntity";
+import Entity from "@core/entities/Entity";
+import SolidEntity from "@core/entities/SolidEntity";
+import Updater from "@core/updater/Updater";
 import Scene from "./Scene";
 
 export interface PhysicsSceneProperties {

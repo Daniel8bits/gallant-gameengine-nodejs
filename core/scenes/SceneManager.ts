@@ -1,7 +1,6 @@
-import RenderStrategy from "../../renderer/RenderStrategy";
 import Scene from "./Scene";
-import IUpdatable from "../updater/IUpdatable";
-import Updater from "../updater/Updater";
+import IUpdatable from "@core/updater/IUpdatable";
+import Updater from "@core/updater/Updater";
 
 class SceneManager implements IUpdatable {
 
