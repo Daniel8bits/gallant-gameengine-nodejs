@@ -55,18 +55,18 @@
   },
   "exports": {
     "appearance/*": {
-      "default": "./dist/src/appearance/*",
-      "types": "./@types/src/appearance/*"
+      "default": "./dist/src/appearance/*.js",
+      "types": "./@types/src/appearance/*.d.ts"
     },
-    "buffer/*": "./dist/src/buffer/*",
-    "core/*": "./dist/src/core/*",
-    "gl/*": "./dist/src/gl/*",
-    "loader/*": "./dist/src/loader/*",
-    "math/*": "./dist/src/math/*",
-    "physics/*": "./dist/src/physics/*",
-    "renderer/*": "./dist/src/renderer/*",
-    "sound/*": "./dist/src/sound/*",
-    "utils/*": "./dist/src/utils/*",
-    "custom-types/*": "./custom-types/*"
+    "buffer/*": "./dist/src/buffer/*.js",
+    "core/*": "./dist/src/core/*.js",
+    "gl/*": "./dist/src/gl/*.js",
+    "loader/*": "./dist/src/loader/*.js",
+    "math/*": "./dist/src/math/*.js",
+    "physics/*": "./dist/src/physics/*.js",
+    "renderer/*": "./dist/src/renderer/*.js",
+    "sound/*": "./dist/src/sound/*.js",
+    "utils/*": "./dist/src/utils/*.js",
+    "custom-types/*": "./custom-types/*.js"
   }
 }
