@@ -54,19 +54,18 @@
     "obj-file-parser": "^0.5.3"
   },
   "exports": {
-    "appearance/*": {
+    "./appearance/*.js": {
       "default": "./dist/src/appearance/*.js",
       "types": "./@types/src/appearance/*.d.ts"
     },
-    "buffer/*": "./dist/src/buffer/*.js",
-    "core/*": "./dist/src/core/*.js",
-    "gl/*": "./dist/src/gl/*.js",
-    "loader/*": "./dist/src/loader/*.js",
-    "math/*": "./dist/src/math/*.js",
-    "physics/*": "./dist/src/physics/*.js",
-    "renderer/*": "./dist/src/renderer/*.js",
-    "sound/*": "./dist/src/sound/*.js",
-    "utils/*": "./dist/src/utils/*.js",
-    "custom-types/*": "./custom-types/*.js"
+    "./buffer/*.js": "./dist/src/buffer/*.js",
+    "./core/*.js": "./dist/src/core/*.js",
+    "./gl/*.js": "./dist/src/gl/*.js",
+    "./loader/*.js": "./dist/src/loader/*.js",
+    "./math/*.js": "./dist/src/math/*.js",
+    "./physics/*.js": "./dist/src/physics/*.js",
+    "./renderer/*.js": "./dist/src/renderer/*.js",
+    "./sound/*.js": "./dist/src/sound/*.js",
+    "./utils/*.js": "./dist/src/utils/*.js"
   }
 }
