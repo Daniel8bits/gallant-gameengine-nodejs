@@ -51,5 +51,17 @@
     "html-webpack-plugin": "^5.5.0",
     "math.gl": "^2.3.1",
     "obj-file-parser": "^0.5.3"
+  },
+  "exports": {
+    "./appearance/**/*.js": "./dist/src/appearance/**/*.js",
+    "./buffer/**/*.js": "./dist/src/buffer/**/*.js",
+    "./core/**/*.js": "./dist/src/core/**/*.js",
+    "./gl/**/*.js": "./dist/src/gl/**/*.js",
+    "./loader/**/*.js": "./dist/src/loader/**/*.js",
+    "./math/**/*.js": "./dist/src/math/**/*.js",
+    "./physics/**/*.js": "./dist/src/physics/**/*.js",
+    "./renderer/**/*.js": "./dist/src/renderer/**/*.js",
+    "./sound/**/*.js": "./dist/src/sound/**/*.js",
+    "./utils/**/*.js": "./dist/src/utils/**/*.js"
   }
 }
