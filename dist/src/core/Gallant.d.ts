@@ -1,5 +1,5 @@
 import GameCore from './GameCore';
-declare class Razor {
+declare class Gallant {
     static CANVAS: HTMLCanvasElement;
     static FOCUSED: boolean;
     static IS_MOUSE_INSIDE: boolean;
@@ -14,5 +14,5 @@ declare class Razor {
     isStarted(): boolean;
     getGameCore(): GameCore;
 }
-export default Razor;
-//# sourceMappingURL=Razor.d.ts.map
+export default Gallant;
+//# sourceMappingURL=Gallant.d.ts.map

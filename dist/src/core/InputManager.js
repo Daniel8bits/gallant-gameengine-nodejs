@@ -1,4 +1,4 @@
-import Razor from "./Razor";
+import Gallant from "./Gallant";
 export const Keys = {
     KEY_0: 'Digit0',
     KEY_1: 'Digit1',
@@ -88,9 +88,9 @@ class InputManager {
         InputManager._currentMousePosition = [0, 0];
         InputManager._previousMousePosition = [0, 0];
         InputManager._mouseMovement = [0, 0];
-        Razor.CANVAS.addEventListener('mousedown', InputManager.onMouseDown);
-        Razor.CANVAS.addEventListener('mouseup', InputManager.onMouseUp);
-        Razor.CANVAS.addEventListener('mousemove', InputManager.onMouseMove);
+        Gallant.CANVAS.addEventListener('mousedown', InputManager.onMouseDown);
+        Gallant.CANVAS.addEventListener('mouseup', InputManager.onMouseUp);
+        Gallant.CANVAS.addEventListener('mousemove', InputManager.onMouseMove);
         this._shouldDebug = false;
     }
     static isKeyPressedDown(key) {
@@ -106,14 +106,14 @@ class InputManager {
         return InputManager._keys.get(key);
     }
     static onKeyDown(event) {
-        if (Razor.IS_MOUSE_INSIDE) {
+        if (Gallant.IS_MOUSE_INSIDE) {
             event.stopPropagation();
             event.preventDefault();
             InputManager._keys.set(event.code, true);
         }
     }
     static onKeyUp(event) {
-        if (Razor.IS_MOUSE_INSIDE) {
+        if (Gallant.IS_MOUSE_INSIDE) {
             event.stopPropagation();
             event.preventDefault();
             InputManager._keys.set(event.code, false);
@@ -150,17 +150,17 @@ class InputManager {
     static onMouseDown(event) {
         event.stopPropagation();
         event.preventDefault();
-        InputManager._mouseButtons[event.button] = Razor.IS_MOUSE_INSIDE;
+        InputManager._mouseButtons[event.button] = Gallant.IS_MOUSE_INSIDE;
     }
     static onMouseUp(event) {
-        if (Razor.IS_MOUSE_INSIDE) {
+        if (Gallant.IS_MOUSE_INSIDE) {
             event.stopPropagation();
             event.preventDefault();
             InputManager._mouseButtons[event.button] = false;
         }
     }
     static onMouseMove(event) {
-        if (Razor.IS_MOUSE_INSIDE) {
+        if (Gallant.IS_MOUSE_INSIDE) {
             event.stopPropagation();
             event.preventDefault();
             InputManager._currentMousePosition[0] -= event.movementX;

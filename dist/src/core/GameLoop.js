@@ -12,8 +12,6 @@ class GameLoop {
         time *= 0.001;
         const delta = time - this._then;
         this._then = time;
-        const fps = 1 / delta;
-        document.querySelector("#fps span").textContent = fps.toFixed(1);
         gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
         InputManager.update();
         this._gameCore.update(time, delta);

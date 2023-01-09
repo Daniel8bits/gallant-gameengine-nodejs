@@ -1,10 +1,10 @@
 import Texture from "../appearance/Texture";
-import Razor from "../core/Razor";
+import Gallant from "../../src/core/Gallant";
 import { gl } from "../gl/GLUtils";
 class Buffer {
     _buffer;
     _texture;
-    constructor(width = Razor.CANVAS.width, height = Razor.CANVAS.height) {
+    constructor(width = Gallant.CANVAS.width, height = Gallant.CANVAS.height) {
         this._buffer = gl.createFramebuffer();
         this._texture = new Texture(width, height);
     }
