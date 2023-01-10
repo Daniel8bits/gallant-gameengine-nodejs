@@ -51,47 +51,5 @@
     "html-webpack-plugin": "^5.5.0",
     "math.gl": "^2.3.3",
     "obj-file-parser": "^0.5.3"
-  },
-  "exports": {
-    "./appearance/**/*.js": {
-      "default": "./dist/src/appearance/**/*.js",
-      "types": "./dist/src/appearance/**/*.d.ts"
-    },
-    "./buffer/**/*.js": {
-      "default": "./dist/src/buffer/**/*.js",
-      "types": "./dist/src/buffer/**/*.d.ts"
-    },
-    "./core/**/*.js": {
-      "default": "./dist/src/core/**/*.js",
-      "types": "./dist/src/core/**/*.d.ts"
-    },
-    "./gl/**/*.js": {
-      "default": "./dist/src/gl/**/*.js",
-      "types": "./dist/src/gl/**/*.d.ts"
-    },
-    "./loader/**/*.js": {
-      "default": "./dist/src/loader/**/*.js",
-      "types": "./dist/src/loader/**/*.d.ts"
-    },
-    "./math/**/*.js": {
-      "default": "./dist/src/math/**/*.js",
-      "types": "./dist/src/math/**/*.d.ts"
-    },
-    "./physics/**/*.js": {
-      "default": "./dist/src/physics/**/*.js",
-      "types": "./dist/src/physics/**/*.d.ts"
-    },
-    "./renderer/**/*.js": {
-      "default": "./dist/src/renderer/**/*.js",
-      "types": "./dist/src/renderer/**/*.d.ts"
-    },
-    "./sound/**/*.js": {
-      "default": "./dist/src/sound/**/*.js",
-      "types": "./dist/src/sound/**/*.d.ts"
-    },
-    "./utils/**/*.js": {
-      "default": "./dist/src/utils/**/*.js",
-      "types": "./dist/src/utils/**/*.d.ts"
-    }
   }
 }
