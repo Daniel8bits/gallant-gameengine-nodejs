@@ -8,12 +8,13 @@ class Gallant {
     _gameLoop;
     _gameCore;
     _started;
+    static _clearColor;
     constructor(gameCore, canvas) {
         Gallant.CANVAS = GLUtils.init(canvas);
         Object.defineProperty(this, "CANVAS", {
             writable: false
         });
-        gl.clearColor(0, 0, 0, 1);
+        Gallant.setClearColor(0, 0, 0, 1);
         this._gameLoop = new GameLoop(gameCore);
         this._started = false;
         this._gameCore = gameCore;
@@ -26,6 +27,7 @@ class Gallant {
         }
         this.resize();
         InputManager.init();
+        gl.clearColor(Gallant._clearColor.x, Gallant._clearColor.y, Gallant._clearColor.z, Gallant._clearColor.w);
         this._gameLoop.start();
         this._started = true;
     }
@@ -64,6 +66,24 @@ class Gallant {
     }
     getGameCore() {
         return this._gameCore;
+    }
+    static setClearColor(r, g, b, a) {
+        const clamp = (v) => Math.min(Math.max(v, 0), 1);
+        Gallant._clearColor.x = clamp(r);
+        Gallant._clearColor.y = clamp(g);
+        Gallant._clearColor.z = clamp(b);
+        Gallant._clearColor.w = clamp(a);
+    }
+    static getClearColor() {
+        return {
+            r: Gallant._clearColor.x,
+            g: Gallant._clearColor.y,
+            b: Gallant._clearColor.z,
+            a: Gallant._clearColor.w
+        };
+    }
+    static glSetClearColor() {
+        gl.clearColor(Gallant._clearColor.x, Gallant._clearColor.y, Gallant._clearColor.z, Gallant._clearColor.w);
     }
 }
 export default Gallant;

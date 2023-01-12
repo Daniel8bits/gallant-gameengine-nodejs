@@ -1,4 +1,5 @@
 import GLUtils, { gl } from '@gl/GLUtils';
+import { Vector4 } from '@math.gl/core';
 import GameCore from './GameCore';
 import GameLoop from './GameLoop';
 import InputManager from './InputManager';
@@ -15,13 +16,14 @@ class Gallant {
     private _gameLoop: GameLoop;
     private _gameCore: GameCore;
     private _started: boolean
+    private static _clearColor: Vector4
 
     public constructor(gameCore: GameCore, canvas?: HTMLCanvasElement) {
         Gallant.CANVAS = GLUtils.init(canvas);
         Object.defineProperty(this, "CANVAS", {
             writable: false
         })
-        gl.clearColor(0, 0, 0, 1);
+        Gallant.setClearColor(0, 0, 0, 1);
         this._gameLoop = new GameLoop(gameCore);  
         this._started = false
         this._gameCore = gameCore;
@@ -35,6 +37,7 @@ class Gallant {
         }
         this.resize();
         InputManager.init()
+        gl.clearColor(Gallant._clearColor.x, Gallant._clearColor.y, Gallant._clearColor.z, Gallant._clearColor.w)
         this._gameLoop.start();
         this._started = true
     }
@@ -86,6 +89,27 @@ class Gallant {
 
     public getGameCore(): GameCore {
         return this._gameCore
+    }
+
+    public static setClearColor(r: number, g: number, b: number, a: number) {
+        const clamp = (v: number) => Math.min(Math.max(v, 0), 1)
+        Gallant._clearColor.x = clamp(r)
+        Gallant._clearColor.y = clamp(g)
+        Gallant._clearColor.z = clamp(b)
+        Gallant._clearColor.w = clamp(a)
+    }
+
+    public static getClearColor() {
+        return {
+            r: Gallant._clearColor.x, 
+            g: Gallant._clearColor.y, 
+            b: Gallant._clearColor.z, 
+            a: Gallant._clearColor.w
+        }
+    }
+
+    public static glSetClearColor() {
+        gl.clearColor(Gallant._clearColor.x, Gallant._clearColor.y, Gallant._clearColor.z, Gallant._clearColor.w);
     }
 }
 
