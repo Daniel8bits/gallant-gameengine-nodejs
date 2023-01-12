@@ -36,14 +36,14 @@ class Framebuffer {
     bind() {
         gl.bindFramebuffer(gl.FRAMEBUFFER, this._fbo);
         gl.viewport(0, 0, this._texture.getWidth(), this._texture.getHeight());
-        Gallant.glSetClearColor();
+        gl.clearColor(0, 0, 0, 0);
         gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
     }
     unbind() {
         this._texture.unbind();
         gl.bindFramebuffer(gl.FRAMEBUFFER, null);
         gl.viewport(0, 0, Gallant.CANVAS.width, Gallant.CANVAS.height);
-        gl.clearColor(0, 0, 0, 0);
+        Gallant.glSetClearColor();
         gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
     }
     destroy() {
